@@ -1,0 +1,28 @@
+Source: libtext-markdown-discount-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: intrigeri <intrigeri@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper-compat (= 13),
+               libmarkdown2-dev,
+               perl-xs-dev,
+               perl:native
+Standards-Version: 4.5.1
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libtext-markdown-discount-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libtext-markdown-discount-perl.git
+Homepage: https://metacpan.org/release/Text-Markdown-Discount
+Rules-Requires-Root: no
+
+Package: libtext-markdown-discount-perl
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends},
+         ${perl:Depends},
+         ${shlibs:Depends}
+Description: Perl interface to Discount, an implementation of Markdown
+ Text::Markdown::Discount is a Perl module that implements the bindings to
+ discount, an implementation of John Gruber's Markdown markup language.
+ .
+ Given the performance of Discount, Text::Markdown::Discount processes markdown
+ formatted text quickly and passes the Markdown 1.0 test suite.
